@@ -1,0 +1,91 @@
+/* 
+* @Author: xiongzaiqiren
+* @Date:   2017-11-01 18:22:35
+* @Last Modified by:   xiongzaiqiren
+* @Last Modified time: 2017-11-01 20:20:20
+*/
+
+body {
+    padding: 0;
+}
+
+/* top .navbar */
+.navbar {
+    border: 0;
+    margin: 0;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+.navbar-brand {
+padding:0;
+}
+.navbar-brand img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.dropdown-menu > li.btn-danger > a:hover,
+.dropdown-menu > li.btn-danger > a:focus {
+    background-color: #f53a35;
+}
+
+/* .sidebar */
+.sidebar {
+    position: absolute;
+    padding: 0;
+    background-color: #222d32;
+}
+.nav-sidebar {
+    margin-left: 0;
+}
+.nav-sidebar > li {
+    background: #30515f;
+}
+    .nav-sidebar > li > a {
+        background: #30515f;
+        color: #fff;
+    }
+        .nav-sidebar > li > a:hover,
+        .nav-sidebar > li > a:focus {
+            color: #fff;
+            background-color: #00c1de;
+        }
+        .nav-sidebar > li.active > a,
+        .nav-sidebar > li.active > a:hover,
+        .nav-sidebar > li.active > a:focus {
+            color: #fff;
+            background-color: #00C1DE;
+        }
+
+.nav-sidebar .nav-sidebar {
+    margin-bottom: 0;
+    background-color: #222d32;
+}
+.nav-sidebar .nav-sidebar > li {
+    background: #222d32;
+}
+    .nav-sidebar .nav-sidebar > li > a {
+        background: #222d32;
+        color: #fff;
+    }
+        .nav-sidebar .nav-sidebar > li > a:hover,
+        .nav-sidebar .nav-sidebar > li > a:focus {
+            color: #fff;
+            background-color: #535b73;
+        }
+        .nav-sidebar .nav-sidebar > li.active > a,
+        .nav-sidebar .nav-sidebar > li.active > a:hover,
+        .nav-sidebar .nav-sidebar > li.active > a:focus {
+            color: #fff;
+            background-color: #00C1DE;
+        }
+
+.main{padding: 0;}
+
+.main-footer {
+    background: #fff;
+    padding: 5px 15px;
+    color: #444;
+    border-top: 1px solid #d2d6de;
+}

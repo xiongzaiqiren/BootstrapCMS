@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>左侧折叠菜单示例</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+        body {
+            background-color: #333744;
+        }
+      
+        .leftNav, .leftNav div, .leftNav a {
+            margin: 0;
+            border: 0 none;
+            -webkit-border-radius: 0 !important;
+            -moz-border-radius: 0 !important;
+            border-radius: 0 !important;
+        }
+            .leftNav a {
+                background: #42485B;
+                color: #fff;
+            }
+                .leftNav a.list-group-item:hover,
+                .leftNav button.list-group-item:hover,
+                .leftNav a.list-group-item:focus,
+                .leftNav button.list-group-item:focus {
+                    color: #fff;
+                    background-color: #68749c;
+                }
+            .leftNav .list-group-item.active,
+            .leftNav .list-group-item.active:hover,
+            .leftNav .list-group-item.active:focus {
+                color: #fff;
+                background-color: #00C1DE;
+            }
+
+    </style>
+</head>
+<body>
+    <!--<h1>你好，世界！</h1>-->
+    <div class="list-group leftNav">
+        <a href="#collapseA" class="list-group-item active" data-toggle="collapse"><span class="glyphicon glyphicon-cog"></span> 一级A<span class="badge">1</span></a>
+            <div class="list-group collapse" id="collapseA">
+                <a href="#" class="list-group-item active"><span class="glyphicon glyphicon-menu-right"></span>二级Aa<span class="badge">1</span></a>
+                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span>二级Ab</a>
+                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span>二级Ac</a>
+            </div>
+        <a href="#collapseB" class="list-group-item" data-toggle="collapse"><span class="glyphicon glyphicon-user"></span> 一级B</a>
+            <div class="list-group collapse" id="collapseB">
+                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span>二级Ba</a>
+                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span>二级Bb</a>
+                <a href="#" class="list-group-item"><span class="glyphicon glyphicon-menu-right"></span>二级Bc</a>
+            </div>
+        <a href="#" class="list-group-item">一级C</a>
+        <a href="#" class="list-group-item">一级D</a>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
